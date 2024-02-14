@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Cost Prediction</title>
+</head>
+
+<body>
+  
+    <div>
+        <h1>Medical Cost Prediction</h1>
+        <h2>Predict the cost for your Medical Insurance!</h2>
+    </div>
+
+    <div>
+        <form action='/predict' method="post">
+
+            <label style="font-size: 20px"><b>Age : </b></label>
+            <input placeholder="Age" name="age" id="age" type="text">
+            <br><br>  
+
+            <label style="font-size: 20px"><b>Gender : </b></label>
+            <input name="Gender" placeholder="0 - Male/1 - Female" type="text">
+            <br><br>        
+                
+            <label style="font-size: 20px"><b>BMI : </b></label>
+            <input name="bmi" placeholder="BMI"  type="text">
+            <br><br>
+
+            <label style="font-size: 20px"><b>Childrens</b></label>   
+            <input name="children" placeholder="0 for None"  type="text">
+            <br><br>
+
+            <label style="font-size: 20px"><b>Do you Smoke?</b></label>           
+            <input name="smoker" placeholder="1 - Yes/0 - No" type="text">
+            <br><br>
+
+            <label style="font-size: 20px"><b>Which Region?</b></label>
+            <input name="region" placeholder="0-NW/1-NE/2-SE/3-SW" type="text">
+            <br><br>
+            
+            <button type="submit">Predict Probability</button>
+        
+        </form>
+    </div>
+
+    <!-- <h1>{{pred}}</h1> -->
+
+
+  </body>
+</html>
